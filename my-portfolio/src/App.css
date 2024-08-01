@@ -1,3 +1,40 @@
+
+.organization-info .icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.organization-info .icons img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
+
+.organization-info {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.organization-info h2 {
+  color: #333;
+}
+
+.organization-info p {
+  color: #666;
+}
+
+.organization-info .icon {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
 .App {
   text-align: center;
 }

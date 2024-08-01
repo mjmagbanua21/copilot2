@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import React, { useState } from 'react';
+import OrganizationInfo from './components/OrganizationInfo';
 
 function App() {
+  // State to manage organization details
+  const [orgDetails, setOrgDetails] = useState({
+    name: 'XYZ Corporation',
+    description: 'A leading innovator in the tech industry.',
+    icons: ['path/to/icon1.png', 'path/to/icon2.png'] // Array of icon paths
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <OrganizationInfo
+        name={orgDetails.name}
+        description={orgDetails.description}
+        icons={orgDetails.icons}
+      />
+      // Rest of your app components
     </div>
   );
 }
-
-export default App;
